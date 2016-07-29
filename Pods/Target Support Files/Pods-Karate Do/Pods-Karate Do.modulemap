@@ -1,0 +1,6 @@
+framework module Pods_Karate_Do {
+  umbrella header "Pods-Karate Do-umbrella.h"
+
+  export *
+  module * { export * }
+}
