@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +14,39 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KarateDoBG" translatesAutoresizingMaskIntoConstraints="NO" id="RBY-rO-3g2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zgd-yM-Bcw">
+                                <rect key="frame" x="97" y="244" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Cpf-VE-Qxu"/>
+                                    <constraint firstAttribute="width" constant="180" id="j8q-z1-BsX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RBY-rO-3g2" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="BHM-o0-Iry"/>
+                            <constraint firstAttribute="trailing" secondItem="RBY-rO-3g2" secondAttribute="trailing" id="Oxd-Fs-DgP"/>
+                            <constraint firstItem="Zgd-yM-Bcw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qdb-uj-KWK"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="RBY-rO-3g2" secondAttribute="bottom" id="T1h-CJ-n32"/>
+                            <constraint firstItem="Zgd-yM-Bcw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fTx-0j-9wV"/>
+                            <constraint firstItem="RBY-rO-3g2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="kzq-XV-l7P"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon" width="60" height="60"/>
+        <image name="KarateDoBG" width="1242" height="2208"/>
+    </resources>
 </document>

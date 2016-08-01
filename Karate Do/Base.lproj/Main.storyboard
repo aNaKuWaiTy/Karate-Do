@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Sign InVC-->
+        <!--SignVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Karate_Do" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignVC" customModule="Karate_Do" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,12 +16,147 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KarateDoBG" translatesAutoresizingMaskIntoConstraints="NO" id="SRh-bQ-Py5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-uu-FEk" customClass="MaterialView" customModule="Karate_Do" customModuleProvider="target">
+                                <rect key="frame" x="40" y="209" width="295" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4f-Ax-vVE" customClass="LogMaterialView" customModule="Karate_Do" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="-30" width="255" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karate Do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmk-0s-Tdr">
+                                                <rect key="frame" x="8" y="8" width="239" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="38"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.49019607840000001" green="0.1019607843" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Qmk-0s-Tdr" secondAttribute="bottom" constant="8" id="71n-8D-gPn"/>
+                                            <constraint firstAttribute="height" constant="50" id="V5w-rA-m7c"/>
+                                            <constraint firstItem="Qmk-0s-Tdr" firstAttribute="top" secondItem="h4f-Ax-vVE" secondAttribute="top" constant="8" id="fvd-FA-goG"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qmk-0s-Tdr" secondAttribute="trailing" constant="8" id="uPX-9v-edH"/>
+                                            <constraint firstItem="Qmk-0s-Tdr" firstAttribute="leading" secondItem="h4f-Ax-vVE" secondAttribute="leading" constant="8" id="x9r-pL-Afi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVf-pt-xua" customClass="LogMaterialView" customModule="Karate_Do" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="225" width="215" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuX-Ff-7AD">
+                                                <rect key="frame" x="0.0" y="0.0" width="215" height="50"/>
+                                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Sign In / Sign Up">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="voJ-SF-UbB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.49019607840000001" green="0.1019607843" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4wq-pj-WoU"/>
+                                            <constraint firstAttribute="trailing" secondItem="VuX-Ff-7AD" secondAttribute="trailing" id="Hq2-zp-kYc"/>
+                                            <constraint firstItem="VuX-Ff-7AD" firstAttribute="leading" secondItem="bVf-pt-xua" secondAttribute="leading" id="ODH-Pm-JWN"/>
+                                            <constraint firstItem="VuX-Ff-7AD" firstAttribute="top" secondItem="bVf-pt-xua" secondAttribute="top" id="RHd-TT-Nfk"/>
+                                            <constraint firstAttribute="bottom" secondItem="VuX-Ff-7AD" secondAttribute="bottom" id="UT4-hK-FiX"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-xo-xMu" userLabel="LogInStack View">
+                                        <rect key="frame" x="27" y="50" width="240" height="150"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbd-S6-M5P" customClass="MaterialTextField" customModule="Karate_Do" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                                <color key="backgroundColor" red="0.49019607840000001" green="0.1019607843" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="skk-gs-Qqx"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-TM-dPJ" customClass="MaterialTextField" customModule="Karate_Do" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="55" width="240" height="40"/>
+                                                <color key="backgroundColor" red="0.49019607840000001" green="0.1019607843" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="rZk-Yd-ddF"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="160" translatesAutoresizingMaskIntoConstraints="NO" id="Ysb-Nk-KKV" userLabel="SocialBtnStack View">
+                                                <rect key="frame" x="0.0" y="110" width="240" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-3Z-Xaw" customClass="MaterialButton" customModule="Karate_Do" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <state key="normal" image="FacebookIcon"/>
+                                                        <connections>
+                                                            <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KK9-Os-Rul"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxo-fz-KMg">
+                                                        <rect key="frame" x="200" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="2EL-Ym-J7i"/>
+                                                            <constraint firstAttribute="height" constant="40" id="M3y-uA-gAt"/>
+                                                        </constraints>
+                                                        <state key="normal" image="twitterIcon"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="zkt-5H-krc"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bVf-pt-xua" firstAttribute="leading" secondItem="Vfg-uu-FEk" secondAttribute="leading" constant="40" id="9g8-eJ-9Br"/>
+                                    <constraint firstItem="bVf-pt-xua" firstAttribute="centerX" secondItem="Vfg-uu-FEk" secondAttribute="centerX" id="GBp-3B-k8K"/>
+                                    <constraint firstItem="h4f-Ax-vVE" firstAttribute="leading" secondItem="Vfg-uu-FEk" secondAttribute="leading" constant="20" id="JD9-bK-RIQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bVf-pt-xua" secondAttribute="trailing" constant="40" id="W7W-B1-Dg4"/>
+                                    <constraint firstItem="h4f-Ax-vVE" firstAttribute="centerX" secondItem="Vfg-uu-FEk" secondAttribute="centerX" id="ZaU-wC-OgX"/>
+                                    <constraint firstAttribute="height" constant="250" id="hBR-4E-iMC"/>
+                                    <constraint firstItem="h4f-Ax-vVE" firstAttribute="top" secondItem="Vfg-uu-FEk" secondAttribute="top" constant="-30" id="kQp-Xd-fN9"/>
+                                    <constraint firstItem="9sp-xo-xMu" firstAttribute="centerY" secondItem="Vfg-uu-FEk" secondAttribute="centerY" id="m2O-vQ-wtu"/>
+                                    <constraint firstAttribute="trailing" secondItem="h4f-Ax-vVE" secondAttribute="trailing" constant="20" id="sGe-H0-wFk"/>
+                                    <constraint firstItem="9sp-xo-xMu" firstAttribute="centerX" secondItem="Vfg-uu-FEk" secondAttribute="centerX" id="xSs-tk-PF4"/>
+                                    <constraint firstAttribute="bottom" secondItem="bVf-pt-xua" secondAttribute="bottom" constant="-25" id="yZt-8D-Eeh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SRh-bQ-Py5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4MZ-Dc-deD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SRh-bQ-Py5" secondAttribute="bottom" id="F0f-oU-ohu"/>
+                            <constraint firstItem="Vfg-uu-FEk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="MoJ-qa-3I8"/>
+                            <constraint firstAttribute="trailing" secondItem="SRh-bQ-Py5" secondAttribute="trailing" id="NL8-pY-Wnc"/>
+                            <constraint firstItem="Vfg-uu-FEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eF4-pM-F1J"/>
+                            <constraint firstAttribute="trailing" secondItem="Vfg-uu-FEk" secondAttribute="trailing" constant="40" id="glg-ug-NOC"/>
+                            <constraint firstItem="SRh-bQ-Py5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xKb-gU-LMn"/>
+                            <constraint firstItem="Vfg-uu-FEk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zd9-av-2mI"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="jbd-S6-M5P" id="amR-Zq-AMu"/>
+                        <outlet property="passwordTextField" destination="d2W-TM-dPJ" id="RMz-MC-mTm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="391.5" y="300.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FacebookIcon" width="40" height="40"/>
+        <image name="KarateDoBG" width="1242" height="2208"/>
+        <image name="twitterIcon" width="40" height="40"/>
+    </resources>
 </document>
