@@ -11,13 +11,12 @@ import UIKit
 class MaterialButton: UIButton {
     
     override func awakeFromNib() {
-        super.awakeFromNib()
         
         // Shadow setting
-        layer.shadowColor = UIColor(red: SHADOW_COLOR, green: SHADOW_COLOR, blue: SHADOW_COLOR, alpha: 0.5).CGColor
-        layer.shadowOpacity = 0.8
-        layer.shadowRadius = 5.0
-        layer.shadowOffset = CGSizeMake(1.0, 1.0)
+        layer.shadowColor = UIColor.blackColor().CGColor
+        layer.shadowOpacity = 1.0
+        layer.shadowRadius = 2.0
+        layer.shadowOffset = CGSizeMake(2.0, 2.0)
         imageView?.contentMode = .ScaleAspectFit
         
     }
@@ -25,7 +24,10 @@ class MaterialButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        layer.borderWidth = 1.0
+        layer.borderColor = UIColor(red: 240.0 / 255.0, green: 240.0 / 255.0, blue: 240.0 / 255.0, alpha: 1.0).CGColor
         layer.cornerRadius = self.frame.width / 2
+        clipsToBounds = true
     }
 
 }

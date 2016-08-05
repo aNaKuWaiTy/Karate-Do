@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B37C21D1D535A4900741042 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37C21C1D535A4900741042 /* UserInfoView.swift */; };
+		3B37C2201D54138500741042 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37C21F1D54138500741042 /* DataService.swift */; };
 		3B68E4971D4A762500828C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68E4961D4A762500828C29 /* AppDelegate.swift */; };
 		3B68E49C1D4A762600828C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B68E49A1D4A762600828C29 /* Main.storyboard */; };
 		3B68E49E1D4A762600828C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B68E49D1D4A762600828C29 /* Assets.xcassets */; };
 		3B68E4A11D4A762600828C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B68E49F1D4A762600828C29 /* LaunchScreen.storyboard */; };
 		3B68E4A91D4A76AD00828C29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B68E4A81D4A76AD00828C29 /* GoogleService-Info.plist */; };
+		3B8CCB171D4F005800232203 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CCB161D4F005800232203 /* FeedVC.swift */; };
+		3B8CCB191D4F1F3A00232203 /* MaterialImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CCB181D4F1F3A00232203 /* MaterialImage.swift */; };
+		3B8CCB1B1D4F276300232203 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CCB1A1D4F276300232203 /* PostCell.swift */; };
 		3B8F33141D4E63C1007FF6CD /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F33111D4E63C1007FF6CD /* MaterialTextField.swift */; };
 		3B8F33151D4E63C1007FF6CD /* LogMaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F33121D4E63C1007FF6CD /* LogMaterialView.swift */; };
 		3B8F33161D4E63C1007FF6CD /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F33131D4E63C1007FF6CD /* MaterialView.swift */; };
@@ -22,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B37C21C1D535A4900741042 /* UserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		3B37C21F1D54138500741042 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3B68E4931D4A762400828C29 /* Karate Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Karate Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B68E4961D4A762500828C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B68E49B1D4A762600828C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +36,9 @@
 		3B68E4A01D4A762600828C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B68E4A21D4A762600828C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B68E4A81D4A76AD00828C29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B8CCB161D4F005800232203 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		3B8CCB181D4F1F3A00232203 /* MaterialImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialImage.swift; sourceTree = "<group>"; };
+		3B8CCB1A1D4F276300232203 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		3B8F33111D4E63C1007FF6CD /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		3B8F33121D4E63C1007FF6CD /* LogMaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogMaterialView.swift; sourceTree = "<group>"; };
 		3B8F33131D4E63C1007FF6CD /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
@@ -62,6 +72,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3B37C21E1D54135C00741042 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B37C21F1D54138500741042 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		3B68E48A1D4A762400828C29 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +101,7 @@
 		3B68E4951D4A762500828C29 /* Karate Do */ = {
 			isa = PBXGroup;
 			children = (
+				3B37C21E1D54135C00741042 /* Services */,
 				3BABC1C61D4EC22C00FCFF15 /* Karate Do.entitlements */,
 				3B8F33171D4E6845007FF6CD /* Util */,
 				3B8F33101D4AE267007FF6CD /* Controller */,
@@ -112,6 +131,9 @@
 				3B8F33121D4E63C1007FF6CD /* LogMaterialView.swift */,
 				3B8F33131D4E63C1007FF6CD /* MaterialView.swift */,
 				3BABC1C21D4E73D600FCFF15 /* MaterialButton.swift */,
+				3B8CCB181D4F1F3A00232203 /* MaterialImage.swift */,
+				3B8CCB1A1D4F276300232203 /* PostCell.swift */,
+				3B37C21C1D535A4900741042 /* UserInfoView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -120,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				3BABC1C01D4E6FD600FCFF15 /* SignVC.swift */,
+				3B8CCB161D4F005800232203 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -272,10 +295,15 @@
 				3B8F33151D4E63C1007FF6CD /* LogMaterialView.swift in Sources */,
 				3BABC1C31D4E73D600FCFF15 /* MaterialButton.swift in Sources */,
 				3BABC1C11D4E6FD600FCFF15 /* SignVC.swift in Sources */,
+				3B37C2201D54138500741042 /* DataService.swift in Sources */,
 				3B8F33141D4E63C1007FF6CD /* MaterialTextField.swift in Sources */,
+				3B8CCB171D4F005800232203 /* FeedVC.swift in Sources */,
 				3B8F33161D4E63C1007FF6CD /* MaterialView.swift in Sources */,
+				3B8CCB191D4F1F3A00232203 /* MaterialImage.swift in Sources */,
 				3B68E4971D4A762500828C29 /* AppDelegate.swift in Sources */,
 				3B8F33191D4E6861007FF6CD /* Constants.swift in Sources */,
+				3B37C21D1D535A4900741042 /* UserInfoView.swift in Sources */,
+				3B8CCB1B1D4F276300232203 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
