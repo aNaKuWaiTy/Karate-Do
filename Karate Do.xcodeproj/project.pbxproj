@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B37C21D1D535A4900741042 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37C21C1D535A4900741042 /* UserInfoView.swift */; };
 		3B37C2201D54138500741042 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37C21F1D54138500741042 /* DataService.swift */; };
+		3B37C2221D54C7D800741042 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37C2211D54C7D800741042 /* Post.swift */; };
 		3B68E4971D4A762500828C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68E4961D4A762500828C29 /* AppDelegate.swift */; };
 		3B68E49C1D4A762600828C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B68E49A1D4A762600828C29 /* Main.storyboard */; };
 		3B68E49E1D4A762600828C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B68E49D1D4A762600828C29 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		3B37C21C1D535A4900741042 /* UserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		3B37C21F1D54138500741042 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3B37C2211D54C7D800741042 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3B68E4931D4A762400828C29 /* Karate Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Karate Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B68E4961D4A762500828C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B68E49B1D4A762600828C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		3B8F330E1D4AE25A007FF6CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3B37C2211D54C7D800741042 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				3BABC1C31D4E73D600FCFF15 /* MaterialButton.swift in Sources */,
 				3BABC1C11D4E6FD600FCFF15 /* SignVC.swift in Sources */,
 				3B37C2201D54138500741042 /* DataService.swift in Sources */,
+				3B37C2221D54C7D800741042 /* Post.swift in Sources */,
 				3B8F33141D4E63C1007FF6CD /* MaterialTextField.swift in Sources */,
 				3B8CCB171D4F005800232203 /* FeedVC.swift in Sources */,
 				3B8F33161D4E63C1007FF6CD /* MaterialView.swift in Sources */,
