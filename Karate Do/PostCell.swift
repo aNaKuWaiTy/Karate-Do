@@ -16,11 +16,19 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var postscountLbl: UILabel!
     @IBOutlet weak var postImg: UIImageView!
     
+    var post: Post!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
     
+    func configureCell(post: Post) {
+        self.post = post
+        self.postscountLbl.text = "\(post.likes)"
+        self.nationalitiLbl.text = post.nationaliti
+        
+    }
     
     
 

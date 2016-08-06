@@ -230,29 +230,32 @@
                                                                     <rect key="frame" x="40" y="221" width="60" height="60"/>
                                                                     <state key="normal" image="Icon"/>
                                                                 </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeL-K7-L5v" userLabel="ProfilePic" customClass="MaterialButton" customModule="Karate_Do" customModuleProvider="target">
-                                                                    <rect key="frame" x="30" y="11" width="80" height="80"/>
-                                                                    <state key="normal" image="KarateDoLogo80"/>
-                                                                </button>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="BZ8-mD-PuU">
+                                                                    <rect key="frame" x="40" y="15" width="60" height="60"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="60" id="d0i-Kh-dST"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="iPP-09-Fjt"/>
+                                                                    </constraints>
+                                                                </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstItem="k1y-Ql-2Xl" firstAttribute="leading" secondItem="Nbc-vK-LNo" secondAttribute="leading" constant="8" id="2cn-UK-Rcy"/>
-                                                                <constraint firstItem="k1y-Ql-2Xl" firstAttribute="top" secondItem="qeL-K7-L5v" secondAttribute="bottom" constant="10" id="6Nz-rt-iJ8"/>
                                                                 <constraint firstItem="TtM-11-LXj" firstAttribute="top" secondItem="k1y-Ql-2Xl" secondAttribute="bottom" constant="10" id="8fW-N9-KQl"/>
                                                                 <constraint firstAttribute="trailing" secondItem="TtM-11-LXj" secondAttribute="trailing" constant="8" id="9eH-xj-5Xq"/>
                                                                 <constraint firstItem="6E3-6C-8Ks" firstAttribute="leading" secondItem="Nbc-vK-LNo" secondAttribute="leading" constant="8" id="Pwp-nK-EQt"/>
                                                                 <constraint firstItem="TtM-11-LXj" firstAttribute="centerX" secondItem="Nbc-vK-LNo" secondAttribute="centerX" id="ROf-zE-wUo"/>
+                                                                <constraint firstItem="BZ8-mD-PuU" firstAttribute="top" secondItem="Nbc-vK-LNo" secondAttribute="top" constant="15" id="UgG-1Z-lgh"/>
                                                                 <constraint firstAttribute="trailing" secondItem="oxJ-qX-2sK" secondAttribute="trailing" constant="40" id="VIL-TJ-RVD"/>
                                                                 <constraint firstItem="oxJ-qX-2sK" firstAttribute="top" secondItem="6E3-6C-8Ks" secondAttribute="bottom" constant="10" id="YhK-Hh-J15"/>
                                                                 <constraint firstAttribute="trailing" secondItem="6E3-6C-8Ks" secondAttribute="trailing" constant="8" id="ZQy-6w-lWv"/>
                                                                 <constraint firstAttribute="trailing" secondItem="k1y-Ql-2Xl" secondAttribute="trailing" constant="8" id="dtE-D7-fb4"/>
-                                                                <constraint firstAttribute="trailing" secondItem="qeL-K7-L5v" secondAttribute="trailing" constant="30" id="f1F-Oy-Si2"/>
                                                                 <constraint firstAttribute="width" constant="140" id="fdB-Vz-cSm"/>
                                                                 <constraint firstItem="TtM-11-LXj" firstAttribute="leading" secondItem="Nbc-vK-LNo" secondAttribute="leading" constant="8" id="p7J-Dg-UCr"/>
-                                                                <constraint firstItem="qeL-K7-L5v" firstAttribute="leading" secondItem="Nbc-vK-LNo" secondAttribute="leading" constant="30" id="pVh-Jm-DQr"/>
+                                                                <constraint firstAttribute="trailing" secondItem="BZ8-mD-PuU" secondAttribute="trailing" constant="40" id="qCN-sl-GAi"/>
                                                                 <constraint firstItem="oxJ-qX-2sK" firstAttribute="leading" secondItem="Nbc-vK-LNo" secondAttribute="leading" constant="40" id="uu1-og-ldd"/>
                                                                 <constraint firstItem="TtM-11-LXj" firstAttribute="centerY" secondItem="Nbc-vK-LNo" secondAttribute="centerY" id="wjY-4B-vnU"/>
+                                                                <constraint firstItem="BZ8-mD-PuU" firstAttribute="leading" secondItem="Nbc-vK-LNo" secondAttribute="leading" constant="40" id="xFk-ME-MZX"/>
                                                                 <constraint firstItem="6E3-6C-8Ks" firstAttribute="top" secondItem="TtM-11-LXj" secondAttribute="bottom" constant="10" id="xuy-3q-US3"/>
                                                             </constraints>
                                                         </view>
@@ -278,6 +281,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="nationalitiLbl" destination="TtM-11-LXj" id="h33-Ji-zfM"/>
+                                            <outlet property="postImg" destination="xss-eK-u9q" id="vrE-PI-ghd"/>
+                                            <outlet property="postscountLbl" destination="6E3-6C-8Ks" id="O45-Fp-YTH"/>
+                                            <outlet property="profileImg" destination="BZ8-mD-PuU" id="vX0-88-PoW"/>
+                                            <outlet property="usernameLbl" destination="k1y-Ql-2Xl" id="OWQ-EV-ZQv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -333,7 +343,6 @@
     <resources>
         <image name="Icon" width="60" height="60"/>
         <image name="KarateDoBG" width="1242" height="2208"/>
-        <image name="KarateDoLogo80" width="80" height="80"/>
         <image name="alshabab" width="800" height="532"/>
         <image name="menu32" width="32" height="32"/>
         <image name="userlogin32" width="32" height="32"/>

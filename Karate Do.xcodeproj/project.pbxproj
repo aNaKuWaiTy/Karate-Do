@@ -133,10 +133,10 @@
 				3B8F33111D4E63C1007FF6CD /* MaterialTextField.swift */,
 				3B8F33121D4E63C1007FF6CD /* LogMaterialView.swift */,
 				3B8F33131D4E63C1007FF6CD /* MaterialView.swift */,
+				3B37C21C1D535A4900741042 /* UserInfoView.swift */,
 				3BABC1C21D4E73D600FCFF15 /* MaterialButton.swift */,
 				3B8CCB181D4F1F3A00232203 /* MaterialImage.swift */,
 				3B8CCB1A1D4F276300232203 /* PostCell.swift */,
-				3B37C21C1D535A4900741042 /* UserInfoView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";

@@ -13,6 +13,7 @@ class Post {
     private var _imageUrl: String!
     private var _likes: Int!
     private var _postKey: String!
+    private var _nationaliti: String!
     
     var caption: String {
         return _caption
@@ -26,14 +27,20 @@ class Post {
         return _likes
     }
     
+    var nationaliti: String {
+        return _nationaliti
+    }
+    
     var postKey: String {
         return _postKey
     }
     
-    init(caption: String, imageUrl: String, likes: Int) {
+    
+    init(caption: String, imageUrl: String, likes: Int, nationaliti: String) {
         self._caption = caption
         self._imageUrl = imageUrl
         self._likes = likes
+        self._nationaliti = nationaliti
     }
     
     init(postKey: String, postData: Dictionary<String, AnyObject>) {
@@ -45,6 +52,10 @@ class Post {
         
         if let imageUrl = postData["imageUrl"] as? String {
             self._imageUrl = imageUrl
+        }
+        
+        if let nationaliti = postData["nationaliti"] as? String {
+            self._nationaliti = nationaliti
         }
         
         if let likes = postData["likes"] as? Int {
